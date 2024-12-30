@@ -1,0 +1,89 @@
+{
+    "output_file": "config.json",
+    
+    "command": {
+        "type": "textbox",
+        "value": "!комманда",
+        "label": "Комманда",
+        "tooltip": "Имя комманды",
+        "group": "Основные"
+    },
+    "permission": {
+        "type": "dropdown",
+        "value": "Everyone",
+        "items": ["Everyone","Subscriber","Moderator","Editor"],
+        "label": "Уровень доступа",
+        "tooltip": "Назначить уровень доступа для комманды",
+        "group": "Основные"
+    },
+    "useCosts": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Использовать стоимость для комманды",
+        "tooltip": "Enable/Disable цену н аипользование комманды",
+        "group": "Цена"
+    },
+    "costs": {
+        "type": "numberbox",
+        "value": 5000,
+        "label": "Цена для использования комманды",
+        "tooltip": "Set the default cost for this command.",
+        "group": "Цена"
+    },
+    "responseNotEnoughPoints": {
+        "type": "textbox",
+        "value": "$user тебе не хватает $cost $currency для использования $command! Еще раз тварь и я найду тебя сука, я знаю где ты живешь тварь, блять я тебя захуярю!",
+        "label": "Нет поинтов",
+        "tooltip": "Сообщение пользовтелю если ему нахватает поинтов для использования команды",
+        "group": "Цена"
+    },
+    "useCooldown": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Использовать перезарядку",
+        "tooltip": "Enable/Disable cooldown and user cooldown",
+        "group": "Перезарядка"
+    },
+    "useCooldownMessages": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Отправлять сообщение если комманда на перезарядке",
+        "tooltip": "Enable/Disable cooldown messages",
+        "group": "Перезарядка"
+    },
+    "cooldown": {
+        "type": "numberbox",
+        "label": "Перезарядка в секундах",
+        "value": 2,
+        "tooltip": "Перезарядка в секундах.",
+        "group": "Перезарядка"
+    },
+    "onCooldown": {
+        "type": "textbox",
+        "value": "$user, $command на перезарядке $cd минут!",
+        "label": "Ответ если комманда на перезарядке",
+        "tooltip": "Сообщение которое будет отображаться если комманда ана перезарядке",
+        "group": "Перезарядка"
+    },
+    "userCooldown": {
+        "type": "numberbox",
+        "label": "Перезарядкаа у конкретного пользователя",
+        "value": 5,
+        "tooltip": "Перезарядка упользователя в секундах",
+        "group": "Перезарядка"
+    },
+    "onUserCooldown": {
+        "type": "textbox",
+        "value": "$user,для тебя $command на перезарядке $cd секунд!",
+        "label": "Ответ если комманда на перезарядке у пользователя",
+        "tooltip": "Message that the bot will display when the command is on user cooldown. \r\n $user = Username \r\n $cd = Time remaining \r\n $command = Command name",
+        "group": "Перезарядка"
+    },
+    "Response": {
+        "type": "textbox",
+        "value": "$user, ты задонатил Zenusoid, $cost $currency маны",
+        "label": "Ответ после использования команды",
+        "tooltip": "Если всеусловия соблюдены то пользователь в ответ получит это сообщение",
+        "group": "Ответ пользователю"
+    }
+}

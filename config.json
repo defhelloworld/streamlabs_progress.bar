@@ -1,0 +1,15 @@
+﻿{
+  "command": "!bank",
+  "permission": "Everyone",
+  "useCosts": true,
+  "costs": 5000,
+  "responseNotEnoughPoints": "$user тебе не хватает $cost $currency для использования $command! Еще раз тварь и я найду тебя сука, я знаю где ты живешь тварь, блять я тебя захуярю!",
+  "useCooldown": true,
+  "useCooldownMessages": true,
+  "cooldown": 2,
+  "onCooldown": "$user, $command на перезарядке $cd минут!",
+  "userCooldown": 5,
+  "onUserCooldown": "$user,для тебя $command на перезарядке $cd секунд!",
+  "WrongFormat": "Необходимо вводить !bank [число]",
+  "Response": "$user, ты задонатил Zenusoid, $cost $currency маны"
+}
