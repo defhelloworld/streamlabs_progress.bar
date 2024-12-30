@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            _ {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .container {
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .container .progress-container {
+                margin-bottom: 25px;
+            }
+
+            .container .progress-container h1 { 
+                /*ЦВЕТ!*/
+                color: white;
+                /*!НЕ МЕНЯТЬ!*/
+                position: absolute;
+                /*В ЗАВИСИМОСТЬ ОТ РАЗМЕРА ТЕКСТА НУЖНО БУДЕТ МЕНЯТЬ*/
+                top: 210px;
+                right: 325px;
+                /*РАССТОЯНИЕ МЕЖДУ СИМВОЛАМИ И СТРОКАМИ*/
+                letter-spacing: normal;
+                /*СТИЛЬ ТЕКСТА(по типу Times New Roman)*/
+                font-family: cursive;
+                /*РАЗМЕР ТЕКСТА*/
+                font-size: 25px;
+                /*ТЕНЬ ТЕСКТА*/
+                text-shadow: 5px 5px 5px 5px;
+            }
+            .container .progress-container h2 { 
+                /*ЦВЕТ!*/
+                color: white;
+                /*!НЕ МЕНЯТЬ!*/
+                position: absolute;
+                /*В ЗАВИСИМОСТЬ ОТ РАЗМЕРА ТЕКСТА НУЖНО БУДЕТ МЕНЯТЬ*/
+                top: 245px;
+                right: 225px;
+                /*РАССТОЯНИЕ МЕЖДУ СИМВОЛАМИ И СТРОКАМИ*/
+                letter-spacing: normal;
+                /*СТИЛЬ ТЕКСТА(по типу Times New Roman)*/
+                font-family: cursive;
+                /*РАЗМЕР ТЕКСТА*/
+                font-size: 20px;
+                /*ТЕНЬ ТЕСКТА*/
+                text-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.75);
+                /*!НЕ МЕНЯТЬ!*/
+                z-index: 999;
+            }
+            /*ЗАДНИЙ ФОН ПОЛОСКИЙ(ПОЛОСКА ЗА ОСНОВНОЙ)*/
+            .container .progress-container .progress-bar {
+                position: relative;
+                /*ШИРИНА*/
+                width: 500px;
+                /*ВЫСОТА*/
+                height: 30px;
+                /*СИЛА СКРУГЛЕНИЯ УГЛОВ*/
+                border-radius: 0px;
+                /*ЦВЕТ*/
+                background-color: rgba(184, 181, 181, 0.1);
+                                                        /*ПРОЗРАЧНОСТЬ ЗАДНЕЙ ПОЛОСКИ*/
+                box-shadow: 10px 12px 14px 0px rgba(22, 20, 20, 0.75);
+                                                      /*ТЕНЬ И ЕЕ ПРОЗРАЧНОСТЬ*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="progress-container">
+                <!--НАЗВАНИЕ ПОЛОСКИ СБОРА-->
+                <h1>Розыгрышь !</h1>
+                <!--Информация о прогрессе заполнения полоски для зрителей(!ЗДЕСЬ ПРОБЕЛЫ В ЦЫФРАХ НЕ СТАВИТЬ, ЗНАЧЕНИЕ ПОЛОСКИ МОЖНО МЕНЯТЬ ТОЛЬКО ОТ 11952000000000 ДО 9999999, ЕСЛИ ПОСТАВТЬ БОЛЬШЕ ИЛИ МЕНЬШЕ ТО КОЛИЧЕСТВО СИМВОЛОВ ИЗМЕНИТСЯ И СКРИПТ НЕ БУДЕТ РАБОТАТЬ! ЕСЛИ ПОНАДОБИТСЯ УВЕЛИЧИТЬ ПУЛ НАПИШИ МНЕ!!)-->
+                <h2>Собранно 520000 из 5OOOOO   !</h2>
+                <div class="progress-bar">
+                                                                                <!--ПАРАМЕТР ОТВЕЧАЮЩИЙ ЗА ЗАПОЛНЕНИЕ ПОЛОСЫ 'width'-->
+                    <div class="progress-bar horizontal" style="position: absolute; top: 0; left: 0; width: 100.0%; height: 100%; color: white; font-weight: 800; font-size: 18px; line-height: 1.7; text-align: center; border-radius: 0px; background: linear-gradient(30deg, rgb(9, 10, 117) 20%, rgb(65, 53, 236) 75%, rgb(116, 41, 238) 100%); transition: width .2s linear;"></div>
+                                                                                                   <!--\ВОТ ОН/        менять от 5119520000000 до 105119520000000 !К ЛЮБОЙ ЦИФРЕ ДОБАВЛЯТЬ ".0" В КОНЦЕ!-->
+                </div>
+                <!--НАЧАЛЬНОЕ ЗНАЧЕНИЕ ПОЛОСКИ СБОРА-->
+                <h3></h3>
+                <!--КОНЕЧНОЕ ЗНАЧЕНИЕ ПОЛОСКИ СБОРА-->
+                <h4></h4>
+            </div>
+        </div>
+    </body>
+</html>
